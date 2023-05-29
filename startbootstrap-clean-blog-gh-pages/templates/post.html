@@ -1,0 +1,36 @@
+<!-- Navigation-->
+{% include "header.html" %}
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url('{{ post_data.img_url }}')"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1 class="text-light">{{ post_data.title }}</h1>
+          <h2 class="subheading">{{ post_data.subtitle }}</h2>
+          <span class="meta"
+            >Posted by {{ post_data.author }}
+            <a href="#"></a>
+            on {{ post_data.date }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Post Content-->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>{{ post_data.body }}</p>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- Footer-->
+{% include "footer.html" %}
